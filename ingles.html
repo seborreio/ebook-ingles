@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGLÊS NA VIDA REAL — Guia Completo de Imersão, Shadowing e Comprehensible Input</title>
+    <!-- Google Fonts para tipografia moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset e Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; color: #333; line-height: 1.6; background-color: #fff; }
+        h1, h2, h3 { font-family: 'Roboto', sans-serif; font-weight: 700; }
+        p { margin-bottom: 1rem; font-weight: 300; }
+        a { text-decoration: none; color: inherit; }
+        button { cursor: pointer; transition: all 0.3s ease; }
+
+        /* Cores: Azul (#007bff), Branco (#fff), Preto (#000) */
+        .btn-primary { background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); color: #fff; border: none; padding: 1.2rem 2.5rem; font-size: 1.3rem; border-radius: 50px; text-transform: uppercase; box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4); }
+        .section { padding: 5rem 2rem; text-align: center; animation: fadeIn 1s ease-in; }
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        /* Animações */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); color: #fff; padding: 7rem 2rem; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://via.placeholder.com/1200x600?text=Background+Pattern') no-repeat center; opacity: 0.1; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .hero p { font-size: 1.6rem; margin-bottom: 2.5rem; }
+        .hero img { max-width: 350px; margin: 2.5rem 0; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+
+        /* Seções Gerais */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
+        .benefit { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 2.5rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        .benefit:hover { transform: translateY(-5px); }
+        .benefit i { font-size: 3.5rem; color: #007bff; margin-bottom: 1.5rem; }
+        .author { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 3rem; }
+        .author img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .mockup { background: linear-gradient(135deg, #000 0%, #333 100%); color: #fff; padding: 5rem 2rem; }
+        .mockup img { max-width: 450px; margin: 2.5rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .price { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 5rem 2rem; }
+        .price .old-price { text-decoration: line-through; color: #999; font-size: 1.8rem; }
+        .price .new-price { font-size: 3.5rem; color: #007bff; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,123,255,0.3); }
+        .faq { background: #fff; }
+        .faq-item { margin-bottom: 2.5rem; text-align: left; max-width: 900px; margin: 0 auto 2.5rem; padding: 1.5rem; background: #f8f9fa; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .faq-item h4 { color: #007bff; font-size: 1.3rem; }
+
+        /* Footer */
+        footer { background: linear-gradient(135deg, #333 0%, #000 100%); color: #fff; padding: 3rem; text-align: center; }
+
+        /* Mobile First */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.3rem; }
+            .grid { grid-template-columns: 1fr; }
+            .author { flex-direction: column; }
+            .btn-primary { font-size: 1.1rem; padding: 1rem 2rem; }
+        }
+    </style>
+    <!-- Ícones Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Aprenda Inglês de Forma Natural e Rápida — Sem Métodos Chatos</h1>
+            <p>O método moderno baseado em imersão, shadowing e comprehensible input para você falar inglês no dia a dia.</p>
+            <img src="https://via.placeholder.com/300x400?text=Mockup+eBook" alt="Mockup do eBook">
+            <br>
+            <a href="https://kiwify.com/checkout/123" class="btn-primary">QUERO APRENDER AGORA</a>
+        </div>
+    </section>
+
+    <!-- 2. O que você vai aprender -->
+    <section class="section">
+        <div class="container">
+            <h2>O Que Você Vai Aprender</h2>
+            <p>Descubra os segredos para dominar o inglês de forma prática e divertida!</p>
+            <div class="grid">
+                <div class="benefit">
+                    <i class="fas fa-globe"></i>
+                    <h3>Imersão Cultural no Brasil</h3>
+                    <p>Como usar imersão cultural mesmo morando no Brasil, com dicas para séries e músicas.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-microphone"></i>
+                    <h3>Shadowing para Pronúncia Nativa</h3>
+                    <p>Treine pronúncia igual nativos com shadowing de vídeos e podcasts.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-brain"></i>
+                    <h3>Input Compreensível</h3>
+                    <p>Aprenda inglês naturalmente com input compreensível, sem forçar memorização.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-clock"></i>
+                    <h3>Rotinas de Estudo Flexíveis</h3>
+                    <p>Rotinas de 10, 20 e 30 minutos para caber na sua agenda.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Plano de 30 Dias</h3>
+                    <p>Plano estruturado para acelerar sua fluência em apenas 30 dias.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-list"></i>
+                    <h3>Conteúdos Recomendados</h3>
+                    <p>Lista de séries, vídeos, podcasts e livros para imersão total.</p>
+                </div>
+            </div>
+            <br>
+            <a href="https://kiwify.com/checkout/123" class="btn-primary">GARANTIR MEU ACESSO AGORA</a>
+        </div>
+    </section>
+
+    <!-- 3. Para quem é esse ebook? -->
+    <section class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>Para Quem É Esse eBook?</h2>
+            <p>Se você se identifica com qualquer uma dessas situações, este guia é para você!</p>
+            <ul style="list-style: none; text-align: left; max-width: 600px; margin: 0 auto;">
+                <li><i class="fas fa-check-circle" style="color: #007bff;"></i> Quem está começando e não sabe por onde ir</li>
+                <li><i class="fas fa-check-circle" style="color: #007bff;"></i> Quem já tentou inglês e travou na gramática</li>
+                <li><i class="fas fa-check-circle" style="color: #007bff;"></i> Quem não tem tempo para estudar horas por dia</li>
+                <li><i class="fas fa-check-circle" style="color: #007bff;"></i> Quem quer aprender usando séries, YouTube e música</li>
+                <li><i class="fas fa-check-circle" style="color: #007bff;"></i> Quem quer evoluir rápido sem métodos chatos</li>
+            </ul>
+            <br>
+            <a href="https://kiwify.com/checkout/123" class="btn-primary">EU ME IDENTIFICO — QUERO COMEÇAR</a>
+        </div>
+    </section>
+
+    <!-- 5. Sessão bônus -->
+    <section class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>Bônus Exclusivos</h2>
+            <p>Ao adquirir o eBook, você ganha acesso imediato a:</p>
+            <div class="grid">
+                <div class="benefit">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Plano de Estudo de 30 Dias</h3>
+                    <p>Um roteiro passo a passo para acelerar sua fluência.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-list-alt"></i>
+                    <h3>Lista Exclusiva de Conteúdos</h3>
+                    <p>Séries, podcasts e livros recomendados para imersão.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Checklists Semanais</h3>
+                    <p>Para acompanhar seu progresso e manter a motivação.</p>
+                </div>
+            </div>
+            <br>
+            <a href="https://kiwify.com/checkout/123" class="btn-primary">GARANTIR BÔNUS — COMPRAR AGORA</a>
+        </div>
+    </section>
+
+    <!-- 6. Sessão com mockup do ebook -->
+    <section class="mockup">
+        <div class="container">
+            <h2>Veja o Seu Novo Guia</h2>
+            <img src="https://via.placeholder.com/400x600?text=3D+Mockup+eBook" alt="Mockup 3D do eBook">
+            <p style="font-size: 1.5rem; margin: 1rem 0;">"Aprenda com constância, não com esforço exagerado."</p>
+            <p style="font-size: 1.5rem; margin: 1rem 0;">"Método que realmente funciona no dia a dia."</p>
+            <p style="font-size: 1.5rem; margin: 1rem 0;">"Inglês do zero ao natural."</p>
+            <br>
+            <a href="https://kiwify.com/checkout/123" class="btn-primary">TENHO QUE TER ISSO — COMPRAR</a>
+        </div>
+    </section>
+
+    <!-- 7. Preço e oferta -->
+    <section class="price">
+        <div class="container">
+            <h2>Oferta Limitada</h2>
+            <p class="old-price">De R$ 97,00</p>
+            <p class="new-price">Por Apenas R$ 15,00</p>
+            <p>Acesso imediato após a compra. Atualizações grátis. Garantia de 2 dias — se não gostar, devolvemos seu dinheiro!</p>
+            <br>
+            <a href="https://kiwify.com/checkout/123" class="btn-primary">SIM, QUERO POR R$ 15,00</a>
+        </div>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section class="faq section">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h4>Quanto tempo leva para ver resultados?</h4>
+                <p>Com consistência, muitos veem progressos em 2-4 semanas. O plano de 30 dias acelera isso!</p>
+            </div>
+            <div class="faq-item">
+                <h4>O método funciona para iniciantes?</h4>
+                <p>Sim! É projetado para quem está começando, focando em imersão natural.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Preciso saber gramática?</h4>
+                <p>Não é obrigatório. O foco é na prática e compreensão, não em regras chatas.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Posso estudar mesmo sem tempo?</h4>
+                <p>Sim! Rotinas de 10 minutos diários são suficientes para começar.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Tenho acesso vitalício?</h4>
+                <p>Sim, acesso imediato e vitalício, com atualizações grátis.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Como recebo o eBook?</h4>
+                <p>Acesso digital imediato via e-mail após a compra.</p>
+            </div>
+            <br>
+            <a href="https://kiwify.com/checkout/123" class="btn-primary">RESOLVER MINHAS DÚVIDAS — COMPRAR</a>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer>
+        <p>INGLÊS NA VIDA REAL — Guia Completo de Imersão, Shadowing e Comprehensible Input</p>
+        <p>&copy; 2023 Kauã Carlos. Todos os direitos reservados.</p>
+        <p><a href="https://kiwify.com/checkout/123">Link do Checkout</a> | Redes Sociais: [Insira links]</p>
+    </footer>
+
+</body>
+</html>
